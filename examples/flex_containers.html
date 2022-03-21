@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Flex Example - Flex Containers</title>
+    <style>
+      body {
+        font-family: Verdana;
+      }
+      h2:not(:first-child) {
+        padding-top: 72px;
+      }
+      .flexChild {
+        background-color: lavender;
+        border: 2px solid grey;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: bold;
+        height: 50px;
+        margin: 10px;
+        padding: 8px 14px;
+        width: 50px;
+      }
+      .flexChildWide {
+        text-align: center;
+        width: 300px;
+      }
+      .flexChildTall {
+        height: 100px;
+        padding-top: 50px;
+      }
+      .flexChildGiant {
+        height: 200px;
+        padding-top: 100px;
+      }
+      .flexContainer {
+        background-color: darksalmon;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexContainer">
+      <div class="flexChild">A</div>
+      <div class="flexChild flexChildWide flexChildGiant">B</div>
+      <div class="flexChild flexChildTall">C</div>
+      <div class="flexChild flexChildWide">D</div>
+    </div>
+  </body>
+</html>
