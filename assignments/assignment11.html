@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 11: Flexbox Containers</title>
+    <style>
+      header {
+        background-color: black;
+        padding: 15px;
+        margin: 20px;
+        font-size: 70px;
+        color:Tan;
+      }
+      .center {
+        text-align: center;
+      }
+      .image1 {
+        border-radius: 180px;
+      }
+      .image2 {
+        border-radius: 180px;
+        display: flex;
+      }
+      .image3 {
+        border-radius: 180px;
+        display: flex;
+      }
+      .image4 {
+        border-radius: 180px;
+        display: flex;
+      }
+      .image5 {
+        border-radius: 180px;
+        display: flex;
+      }
+      .image6 {
+        border-radius: 180px;
+      }
+      .flexContainer1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 2170px;
+      }
+      .flexChildGiant {
+        margin: 30px;
+        padding-bottom: 10px;
+
+      }
+      .flexChildTall {
+        height: 100px;
+        padding-top: 50px;
+      }
+      .flexChild {
+        margin: 10px;
+        padding: 80px 100px;
+        width: 500px;
+      }
+      .flexChildWide {
+        width: 400px;
+        padding: 10px 1px;
+      }
+      .flexContainer2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+      }
+      .flexContainer3 {
+
+      }
+      .flexContainer4 {
+
+      }
+      </style>
+  </head>
+  <body>
+    <header>
+      <div class="center">My Dream Condo Vibe
+      </div>
+  <div>
+    <div class="flexContainer1">
+        <img class="image1 flexChildGiant flexChild"
+          style="height: 350px"
+          src="../images/DreamCondo.jpeg"
+          alt="Condo"
+          />
+      <img class="image2 flexChildGiant flexChildWide"
+        style="height: 300px"
+        src="../images/Bedroom.jpeg"
+        alt="Bedroom"
+      />
+      <img class="image3 flexChildGiant flexChild"
+        style="height: 300px"
+        src="../images/Room.jpeg"
+        alt="Room"
+        />
+      <img class="image4 flexChildGiant flexChildWide"
+        style="height: 300px"
+        src="../images/View.jpeg"
+        alt="CityView"
+        />
+      <img class="image5 flexChildGiant flexChild"
+        style="height: 300px"
+        src="../images/ElegantRoom.jpeg"
+        alt="Elegant"
+        />
+      <img class="image6 flexChildGiant flexChildWide"
+        style="height: 290px"
+        src="../images/Hollywood.png"
+        alt="Hollywood"
+        />
+    </div>
+  </div>
+  <div class=flexContainer2">
+
+  </div>
+
+  <div class=flexContainer3">
+
+  </div>
+
+  <div class=flexContainer4">
+
+  </div>
+    </header>
+  </body>
+</html>
