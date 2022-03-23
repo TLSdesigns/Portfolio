@@ -9,6 +9,7 @@
         margin: 20px;
         font-size: 70px;
         color:Tan;
+        font-family: Didot;
       }
       .center {
         text-align: center;
@@ -35,11 +36,24 @@
       .image6 {
         border-radius: 180px;
       }
+      .image7 {
+        border-radius: 20px;
+        margin: 15px;
+        padding: 5px;
+      }
+      .image8 {
+        border-radius: 20px;
+        margin: 15px;
+        padding: 5px;
+      }
+      .image9 {
+        border-radius: 20px;
+        margin: 15px;
+        padding: 5px;
+      }
       .flexContainer1 {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap-reverse;
-        justify-content: space-evenly;
         align-items: center;
         width: 2170px;
       }
@@ -63,14 +77,48 @@
       }
       .flexContainer2 {
         display: flex;
-        flex-wrap: wrap-reverse;
+        display: inline-block;
+        padding: 5px;
+        position: sticky;
+        background-color: White;
+        flex-direction: row;
       }
       .flexContainer3 {
+        display: flex;
+        margin: 10px;
+        padding: 100px;
+        flex-wrap: wrap;
+        width: 200px;
 
       }
       .flexContainer4 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        padding: 20px;
 
       }
+      .textbox1 {
+        font-size: 50px;
+
+      }
+      #list {
+        font-size: 30px;
+
+      }
+      .block1  {
+        background-color: tan;
+        color: white;
+      }
+      .block2  {
+        background-color: LavenderBlush;
+        color: black;
+      }
+      .block3  {
+        background-color: white;
+        color: black;
+      }
+
       </style>
   </head>
   <body>
@@ -111,16 +159,44 @@
         />
     </div>
   </div>
-  <div class=flexContainer2">
-
+  <div>
+    <p class="textbox1">Location: Los Angeles
+    </p>
+    <ul id="list">
+      <li>Beverly Hills</li>
+      <li>Sunset Boulevard</li>
+      <li>Santa Monica</li>
+      <li>Malibu</li>
+    </ul>
+    <div class="flexContainer2">
+      <img class="image7"
+        style="height: 300px"
+        src="../images/PalmTrees.jpeg"
+        alt="trees"
+        />
+      <img class="image8"
+        style="height: 350px"
+        src="../images/HillsView.jpeg"
+        alt="pool"
+        />
+      <img class="image9"
+        style="height: 350px"
+        src="../images/WestHollywood.jpeg"
+        alt="pool"
+        />
+    </div>
   </div>
 
-  <div class=flexContainer3">
-
+  <div class="flexContainer3">
+    <div class="block1 flexChildTall">Modern</div>
+    <div class="block2 flexChildTall">Elegant</div>
+    <div class="block3 flexChildTall">Chic</div>
   </div>
 
-  <div class=flexContainer4">
-
+  <div class="flexContainer4">
+    <div class="block1 flexChildTall">CityView</div>
+    <div class="block2 flexChildTall">Sunsets</div>
+    <div class="block3 flexChildTall">PalmTrees</div>
   </div>
     </header>
   </body>

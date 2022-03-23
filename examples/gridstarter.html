@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+      .block {
+        padding: 20px;
+      }
+      .block1 {
+        background-color: red;
+        /* grid-column: 1 / 4; */
+      }
+      .block2 {
+        background-color: blue;
+        /* grid-column: 2 / 4;
+        grid-row: 2 / 4; */
+
+      }
+      .block3 {
+        background-color: green;
+        /* grid-column: 1;
+        grid-row: 2 / 4; */
+      }
+      .block4 {
+        background-color: orange;
+      }
+      .block5 {
+        background-color: yellow;
+      }
+      .block6 {
+        background-color: purple;
+      }
+      .block7 {
+        background-color: black;
+        color: white;
+      }
+      .myGrid {
+        display: grid;
+        grid-template-columns: 1fr 400px 1fr; /* repeat(#, repeating values)*/
+        grid-auto-rows: minmax(100px, auto);
+        gap: 20px 10px;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "sidenav content content"
+            "sidenav content content"
+            "footer footer footer";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <div class="block block1">1</div>
+      <div class="block block2">Illum incurreret e occaecat qui se sint fugiat ubi incurreret nam ad fore constias reprehenderit, litteris philosophari iis proident. Fabulas sempiternum te constias, do ita amet expetendis e fugiat senserit litteris, mentitum quae malis ne aute. Nam incididunt ad offendit id ita anim probant. Si sunt efflorescere ubi an aliqua vidisse officia, possumus sunt irure laborum quorum, ea tempor aute export laboris.Non esse te anim. Mentitum duis expetendis, ea multos offendit. Irure comprehenderit voluptate export iudicem.</div>
+      <div class="block block3">3</div>
+      <div class="block block4">4</div>
+      <div class="block block5">5</div>
+      <div class="block block6">6</div>
+      <div class="block block7">7</div>
+    </div>
+  </body>
+</html>
