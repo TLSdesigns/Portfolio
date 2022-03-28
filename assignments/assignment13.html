@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 13</title>
+    <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+      }
+      .header {
+        background-color: Tan;
+        padding: 36px;
+        grid-column: 1 / 6;
+        grid-row: 1;
+        font-size: 30px;
+        color: black;
+        font-family: Times;
+        text-align: center;
+        opacity: 80%;
+      }
+      .sidenav {
+        background-color: SeaShell;
+        padding: 36px;
+        grid-column: 1;
+        grid-row: 2/4;
+
+      }
+      .content {
+        padding: 36px;
+        grid-column: 2 / 6;
+        grid-row: 2;
+        font-size: 25px;
+
+      }
+      .sidenav li:first-child a {
+        color:black;
+        font-size: 30px;
+        font-family: Times;
+      }
+      .sidenav li:nth-child(2) a {
+        color:black;
+        font-size: 30px;
+        font-family: Times;
+      }
+      .sidenav li:nth-child(3) a {
+        color:black;
+        font-size: 30px;
+        font-family: Times;
+      }
+      .footer {
+        background-color: Tan;
+        font-size: 20px;
+        color: black;
+        font-family: Times;
+        text-align: center;
+        font-size: 25px;
+        grid-column: 1 / 6;
+      }
+      .block {
+        padding: 10px;
+        margin: 100px;
+        display: block;
+
+      }
+      .Image1 {
+        height: 325px;
+        margin: 10px;
+        display: block;
+        grid-column: 3 / 3;
+        float: right;
+      }
+      .Image2 {
+        display: block;
+        grid-column: 3 / 3;
+        float: left;
+        margin: 10px;
+      }
+      .content2 {
+        padding: 36px;
+        grid-column: 2 / 6;
+        grid-row: 3;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <div class="header">
+        <h1>Best Ways to Wear a Blazer For Women</h1>
+      </div>
+      <nav class="sidenav">
+        <ul>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Styles</a></li>
+          <li><a href="#">Colors</a></li>
+        </ul>
+      </nav>
+      <div class="content block">
+
+        <img class="Image1"
+          style="height: 550px"
+          src="../images/Clothing.jpeg"
+          alt="Blazer"
+        />
+        <div>
+          <div>
+          You are free to combine your favorite blazer with pants, shorts, skirts, dresses and jeans.
+          This magic piece will instantly change your casual outfit and make it look more smart-casual.
+          All in all, a blazer is clothing staple that every woman must-have.
+          It ideally works for daily combos, as well as for night-outs on the town.
+          Believe me, you can never have enough blazers in your closet.
+          </div>
+        </div>
+      </div>
+        <div class="content2 block">
+
+          <img class="Image2"
+            style="height: 650px"
+            src="../images/StarbucksDrink.jpeg"
+            alt="Drink"
+          />
+          Look professional and put-together with your blazer paired with a crisp white shirt, tailored pants, and black or nude pumps.
+          Dainty jewelry can also add a personal touch without going overboard.
+          Trade your pumps for loafers! To transition your outfit from business professional to business casual, add a cute and comfy sweater over a crisp dress shirt.
+        </div>
+      <footer class="footer">
+            © 2019 Fashion Tasty
+      </footer>
+    </div>
+  </body>
+</html>
