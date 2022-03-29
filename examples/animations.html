@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Animation Examples</title>
+    <style>
+      @keyframes toPink {
+        0% {
+          color: black;
+        }
+        25% {
+          color: PowderBlue;
+        }
+        50% {
+          color: LavenderBlush;
+        }
+        75% {
+          color: Thistle;
+        }
+        100% {
+          color: black;
+        }
+      }
+      #animation1 {
+        animation: toPink 10s infinite;
+      }
+      #box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: tan;
+        animation: toCircle 5s infinite ease-in-out;
+        animation-delay: 5s;
+      }
+      @keyframes toCircle{
+        0%, 100% {
+          background-color: Silver;
+          border-radius: 100px;
+        }
+        25% {
+          border-radius: 50% 0% 50% 75%;
+        }
+        50% {
+          background-color: WhiteSmoke;
+          border-radius: 100px;
+          transform: none;
+        }
+        75% {
+          transform: translateX(400px) rotate(180deg);
+        }
+      }
+      #view {
+        margin-top: 200px;
+        height: 200px;
+      }
+      @keyframes view {
+        0%, 100% {
+          transform: translate(0, 0);
+        }
+        10%, 30%, 50% {
+          transform: translateY(-200px);
+        }
+        20%, 40%, 60% {
+          transform: translateY(0px);
+        }
+        75% {
+          transform: translateY(400px);
+        }
+      }
+
+      #button {
+        border-radius: 24px;
+        background-color: blue;
+        display: inline-block;
+        padding: 20px;
+        cursor: pointer;
+      }
+      #button:hover {
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="animation1">This is a basic animation.</h1>
+    <div id="box"></div>
+    <img id="view" src="../images/View.jpeg" alt="poolview">
+    <br>
+    <div id="button">Click Me!<div>
+  </body>
+</html>
