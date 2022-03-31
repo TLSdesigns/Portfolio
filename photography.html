@@ -3,65 +3,114 @@
   <head>
     <title>Photography</title>
     <style>
-      body {
-        background-color: white;
+    body {
+      background-color: black;
+    }
+    p {
+      font-size: 19px;
+    }
+    #header {
+      text-align: center;
+      display:inline-block;
+      padding: 5px;
+      margin: 20px;
+      font-size: 55px;
+      color: #e3d6c7;
+      font-family: 'Times New Roman', serif;
+      width: 100%;
+      grid-area: header;
+    }
+
+    #myNavBar p a {
+      color: #e3d6c7;
+      font-family: 'Times New Roman', serif;
+      font-size: 20px;
+
+    }
+    .centered{
+      text-align: center;
+      grid-area: header;
+
+    }
+    #transition1 {
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-timing-fucntion: linear;
+      transition-delay: 0s;
+      transform-origin: center;
+      color: #e3d6c7;
+      font-family: 'Times New Roman', serif;
+      font-size: 20px;
+    }
+    #transition1:hover {
+      transform: scale(3);
+    }
+    #name {
+      transition: color 1s;
+      font-size: 27px;
+    }
+    #name:hover {
+      color: #e3d6c7;
+    }
+    #content {
+      display: grid;
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-template-areas:
+        ". header ."
+        ". sidenav ."
+        ". cover .";
+    }
+    #myNavBar {
+      grid-area: sidenav;
+      text-align: center;
+      margin-left: 30px;
+    }
+    @keyframes colors {
+      0% {
+        color: #d3a977;
       }
-      p {
-        font-size: 19px;
+      25% {
+        color: #e3d6c7;
       }
-      #header {
-        text-align: center;
-        display:inline-block;
-        border: 1.1px solid;
-        background-color:rgb(210, 190, 185);
-        padding: 10px;
-        margin: 40px;
-        font-size: 30px;
-        color:black;
-        font-family: Didot;
-        width: 65%;
+      50% {
+        color: #d3a977;
       }
-      #myNavBar p:nth-child(1) a{
-        color: RosyBrown;
+      75% {
+        color: #e3d6c7;
       }
-      #myNavBar p:nth-child(2) {
-        color: RosyBrown;
+      100% {
+        color:#d3a977;
       }
-      #myNavBar p:nth-child(3) a{
-        color: RosyBrown;
+    }
+    #header {
+      animation: colors 6s infinite;
+    }
+  @media screen and (max-width: 480px) {
+    #content {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "sidenav"
+        "cover";
       }
-      #myNavBar p:nth-child(4) a{
-        color: RosyBrown;
-      }
-      #myNavBar p:nth-child(5) a{
-        color: RosyBrown;
-      }
-      #myNavBar p:nth-child(6) a{
-        color: RosyBrown;
-      }
-      .centered{
-        text-align: center;
-      }
+  }
     </style>
   </head>
   <body>
-    <p style="text-align:center;font-weight: bold; font-size: 34px;"> Photography
-    </p>
-    <h2>Tajea Sheffey</h2>
+    <header id="header">
+      Photography
+    </header>
     <nav id="myNavBar">
-    <p style="font-size: 19px;"><a href="index.html">Work</a></p>
-    <p style="font-size: 19px;">Photography</p>
-    <p style="font-size: 19px;"><a href="artwork.html">Artwork</a></p>
-    <p style="font-size: 19px;"><a href="projects.html">Projects</a></p>
-    <p><a href="aboutpage.html">About Me</a></p>
-    <p><a href="contactinformation.html">Contact Information</a></p>
+      <p id="transition1"><a href="index.html">Work</a></p>
+      <p id="transition1">
+        Photography
+      </p>
+      <p id="transition1"><a href="artwork.html">Artwork</a></p>
+      <p id="transition1"><a href="projects.html">Projects</a></p>
+      <p id="transition1"><a href="aboutpage.html">About Me</a></p>
+      <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
     <nav>
-      <br></br>
-    <style>
-      body {
-        background-color: white;
-      }
-    </style>
+      <br>
 <div style="text-align:center">
   <img
     style="
@@ -96,10 +145,5 @@
     src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/dafcb8f9-3c6b-4ac1-816c-22b4ba28bd7e_rw_3840.jpg?h=19b685c7601d9bd1af3f00aed6ec32ca"
   />
 </div>
-
-
-
-
-
 </body>
 </html>
