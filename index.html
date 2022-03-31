@@ -13,15 +13,14 @@
         text-align: center;
         display:inline-block;
         border: 3px solid;
-        background-color:black;
-        padding: 10px;
-        margin: 40px;
+        background-color:white;
+        padding: 5px;
+        margin: 20px;
         font-size: 30px;
         color: #e3d6c7;
         font-family: 'Times New Roman', serif;
-        width: 80%;
+        width: 100%;
         grid-area: header;
-        border-radius: 9px
       }
 
       #myNavBar p a {
@@ -40,13 +39,13 @@
         transition-duration: 0.5s;
         transition-timing-fucntion: linear;
         transition-delay: 0s;
-        transform-origin: left;
+        transform-origin: center;
         color: #e3d6c7;
         font-family: 'Times New Roman', serif;
         font-size: 20px;
       }
       #transition1:hover {
-        transform: scale(2.1);
+        transform: scale(3);
       }
       #name {
         transition: color 1s;
@@ -60,38 +59,42 @@
         grid-template-columns: 1fr 5fr 1fr;
         grid-template-areas:
           ". header ."
-          "sidenav cover .";
+          ". sidenav ."
+          ". cover .";
       }
       #myNavBar {
         grid-area: sidenav;
+        text-align: center;
+        margin-left: 30px;
       }
-      #me {
+      #image {
         grid-area: cover;
         width: 100%;
-        margin: 20px;
+        margin: 10px;
         padding: 10px;
-        background-color: RosyBrown;
-        border-radius: 6px
+        border-radius: 7px;
+        border: 1px solid;
+        background-color:white;
       }
       @keyframes colors {
         0% {
-          color: white;
+          color: #d3a977;
         }
         25% {
           color: #e3d6c7;
         }
         50% {
-          color: white;
+          color: #d3a977;
         }
         75% {
           color: #e3d6c7;
         }
         100% {
-          color: white;
+          color:#d3a977;
         }
       }
       #header {
-        animation: colors 4s infinite;
+        animation: colors 6s infinite;
       }
     @media screen and (max-width: 480px) {
       #content {
@@ -127,10 +130,12 @@
     <p id="transition1"><a href="aboutpage.html">About Me</a></p>
     <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
   </nav>
-  <img id="me" src="images/Myself.png">
+  <img id="image"
+  style="height: 750px"
+  src="images/HomePage.jpeg"
+  alt="marble"
+  />
 </div>
-
-
   </body>
 
 </html>
