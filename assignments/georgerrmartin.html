@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>George R. R. Martin Project</title>
+    <style>
+    body {
+      text-align: center;
+      background: Gainsboro;
+    }
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0px;
+      }
+      nav ul li {
+        flex: 1;
+        text-align: center;
+      }
+      #banner {
+        background-image: url("../images/GRRM-MAIN-wildspirit.jpeg");
+        grid-area: banner;
+        height: 300px;
+        background-position: center;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 1fr 333px 334px 333px 1fr;
+        grid-template-rows: minmax(50px, auto);
+        grid-template-areas:
+          ". header  header header ."
+          ". nav     nav    nav    ."
+          ". banner  banner banner ."
+          ". cards   cards  cards  ."
+          ". sidenav blog  blog    ."
+          ". footer  footer footer ."
+          ". bottom  bottom bottom ."
+      }
+      h1 {
+        font-family: 'Montaga', serif;
+        font-size: 60px;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        grid-area: header;
+
+      }
+       nav {
+         grid-area: nav;
+       }
+      #shield {
+        width: 65px;
+        height: 75px;
+        background-image: url("../images/shield-spin.jpeg");
+      }
+      main {
+        grid-area: blog;
+      }
+      aside {
+        grid-area: sidenav;
+      }
+      #cards {
+        display: flex;
+        flex-direction: row;
+        grid-area: cards;
+      }
+      #cards img {
+        flex: 1;
+      }
+
+      @media screen and (max-width: 1000px){
+        #grid {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "header"
+            "nav"
+            "banner"
+            "cards"
+            "blog"
+            "sidenav"
+            "footer"
+            "bottom";
+        }
+        nav ul {
+          flex-direction: column;
+        }
+        #cards {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <header>
+        <div id="shield"></div>
+        <h1>George R. R. Martin</h1>
+        <a href="#">
+          <img src="..//images/facebook-overall.jpeg" />
+        </a>
+        <a href="#">
+          <img src="..//images/app-overall.jpeg" />
+        </a>
+        <a href="#">
+          <img src="..//images/twitter-overall.jpeg" />
+        </a>
+      </header>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">NOT A BLOG</a></li>
+          <li><a href="#">ABOUT GEORGE</a></li>
+          <li><a href="#">BOOKS</a></li>
+          <li><a href="#">FOR FANS</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">MERCHANDISE</a></li>
+        </ul>
+      </nav>
+        <div id="banner">
+          <img
+            src="..//images/GRRM-MAIN-wildspirit.jpeg"
+            alt="George R.R Martin Newsletter"
+          />
+        </div>
+        <div id="cards">
+          <img
+            src="..//images/GRRM-SMALL-cocteau3.jpeg"
+            alt="Jean Coctaeu"
+          />
+          <img
+            src="..//images/newsletter-home.png"
+            alt="George R.R Martin Newsletter"
+          />
+          <img
+            src="..//images/callout-sample-3.jpeg"
+            alt="Dark Swords"
+          />
+        </div>
+        <aside>
+          <div id="nextAppearence">
+            <h3>Next Appearence</h3>
+            <div>
+              <div class="yellow">September 1-5 2022</div>
+              <div class="white"> 2022 Worldcon in Chicago, Chicon 8</div>
+              <img src="images/more-appearences.jpeg" alt="More Appearences" />
+            </div>
+          </div>
+        </aside>
+        <main>
+          <h2>Current GRRM Blog Posts</h2>
+          <h3><a href="#"> The Dragons are Coming...</a><h3>
+          <p>
+            … they’re on the wing, and will be arriving in August.
+            Details here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/
+            <span><a href="#">Read more</a><span>
+          </p>
+          <p>
+            We’re so excited to announce The Rise of The Dragon, a lavish visual
+            history of House Targaryen – the iconic family at the heart of HBO’s
+            Game of Thrones prequel series, House of the Dragon – featuring over 180 all-new…
+            <span><a href="#">Read more</a><span>
+          </p>
+
+        </main>
+        <footer></footer>
+        <div id="bottom"></div>
+
+
+
+    </div>
+  </body>
+</html>
