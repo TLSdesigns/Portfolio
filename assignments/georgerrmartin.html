@@ -12,10 +12,20 @@
         flex-direction: row;
         list-style-type: none;
         padding: 0px;
+
       }
       nav ul li {
         flex: 1;
         text-align: center;
+      }
+      nav ul li:hover {
+        background: linear-gradient(white,lightgray);
+        padding:4px 10px;
+
+      }
+
+      nav ul li:active {
+        background: linear-gradient(white,lightgray);
       }
       #banner {
         background-image: url("../images/GRRM-MAIN-wildspirit.jpeg");
@@ -37,7 +47,6 @@
           ". bottom  bottom bottom ."
       }
       h1 {
-        font-family: 'Montaga', serif;
         font-size: 60px;
         text-align: center;
         font-family: 'Playfair Display', serif;
@@ -50,6 +59,7 @@
       }
        nav {
          grid-area: nav;
+
        }
       #shield {
         width: 65px;
@@ -70,7 +80,11 @@
       #cards img {
         flex: 1;
       }
-
+      li a {
+        color:black;
+        font-family: Verdana, Geneva, sans-serif;
+        text-decoration: none;
+      }
       @media screen and (max-width: 1000px){
         #grid {
           grid-template-columns: 1fr;
@@ -158,12 +172,29 @@
             Details here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/
             <span><a href="#">Read more</a><span>
           </p>
+          <h3><a href="#">THE RISE OF THE DRAGON</a><h3>
           <p>
             We’re so excited to announce The Rise of The Dragon, a lavish visual
             history of House Targaryen – the iconic family at the heart of HBO’s
             Game of Thrones prequel series, House of the Dragon – featuring over 180 all-new…
             <span><a href="#">Read more</a><span>
           </p>
+          <h3><a href="#">Dealer Takes Two</a><h3>
+          <p>
+            Kings and deuces may not be as iconic… or ominous… a poker hand as aces and eights,
+            but it’s not a bad hand to be dealt…
+            and Tor will be dealing those cards to all the Wild Cards fans out…
+            <span><a href="#">Read more</a><span>
+          </p>
+          <h3><a href="#">Random Updates and Bits o’ News</a><h3>
+          <p>
+            I look around, and I don’t know where 2021 went.
+            I blinked and it was gone.
+            Not a year that I am going to mourn much, any more than 2020.
+            A global pandemic, so many deaths (including friends of mine,…
+            <span><a href="#">Read more</a><span>
+          </p>
+
 
         </main>
         <footer></footer>
