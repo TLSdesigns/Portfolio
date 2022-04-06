@@ -9,22 +9,51 @@
     #Space3 label {
       display: block;
     }
-
     #Space1 input:focus-visible{
-      outline: 5px solid blue;
+      outline: 2px solid black;
     }
 
-    #lastNameContainer input {
-      background-color: skyblue;
-      border: 0;
-      padding: 12px;
+    #Space2 input:focus-visible{
+      outline: 2px solid black;
     }
-    #lastNameContainer input:focus-visible {
-      outline: 0;
+    #Space3 input:focus-visible{
+      outline: 2px solid black;
     }
+    h2 {
+      background-color: black;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 30px;
+      color: RosyBrown;
+    }
+    body {
+      background-color: WhiteSmoke;
+    }
+    #buttonContainer  input[type=button] {
+      background: linear-gradient(to bottom, white, RosyBrown);
+      border: 1px solid WhiteSmoke;
+      border-radius: 9px;
+      padding: 11px;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+    #buttonContainer  input:active {
+      background: linear-gradient(to bottom, RosyBrown, white);
+    }
+    img {
+      float: right;
+      border: 4px solid black;
+    }
+    p {
+      font-family: "Lucida Console", "Courier New", monospace;
+      color: RosyBrown;
+      font-size: 20px;
+    }
+
   </style>
   <body>
     <form>
+      <fieldset>
+        <legend>High Fashion Brands</legend>
       <h2>Popular Luxury Brands</h2>
       <div id="Space1">
         <p>What are your favorite fashion brands?</p>
@@ -40,6 +69,11 @@
         <input type="text" id="Option3Input" name="thirdOption">
       </div>
       <br>
+      <img class="Image1"
+        style="height: 600px"
+        src="../images/CHANEL.jpeg"
+        alt="perfume"
+      />
       <p>What brand do you wear the most?</p>
     <div>
       <input
@@ -74,9 +108,53 @@
         Chanel
       </label>
     </div>
+    <p>What are your top favorite brands</p>
+    <div>
+      <input
+      type="checkbox"
+      id="GucciCheckbox"
+      name="Option1"
+      value="Gucci"
+      />
+      <label for="GucciCheckbox">Gucci</label>
+    </div>
+    <div>
+      <input
+      type="checkbox"
+      id="LVCheckbox"
+      name="Option2"
+      value="LV"
+      />
+      <label for="LVCheckbox">Louis Vuitton</label>
+    </div>
+    <div>
+      <input
+      type="checkbox"
+      id="VersaceCheckbox"
+      name="Option3"
+      value="Versace"
+      />
+      <label for="VersaceCheckbox">Versace</label>
+    </div>
+    <div>
+      <input
+      type="checkbox"
+      id="BalenciagaCheckbox"
+      name="Option4"
+      value="Balenciaga"
+      />
+      <label for="BalenciagaCheckbox">Balenciaga</label>
+    </div>
+    <br>
+    <img class="Image2"
+      style="height: 400px"
+      src="../images/DIOR.jpeg"
+      alt="glasses"
+    />
     <div id="buttonContainer">
       <input type="button" value="Click to submit this form">
     </div>
+    </fieldset>
     </form>
   </body>
 </html>
