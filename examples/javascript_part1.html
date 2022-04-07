@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Java Script Examples-Part 1</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <input type="button" id="button1" value="Click 1">
+    <input
+      type="button"
+      id="colorButton"
+      value="Click to change color">
+
+    <script type="text/javascript">
+      let greeting = 'Hello World!';
+
+      function logText(textToLog) {
+        console.log(textToLog);
+        //alert(textToLog):
+      }
+
+      logText(greeting);
+      logText('How are you doing');
+      logText('Are you sure?');
+
+      let button1 = document.getElementById('button1');
+      button1.onclick = ()=> {
+        logText(button1.id);
+      };
+
+
+      function getRandomNumberBetween(lowValue, highValue) {
+        let range = highValue - lowValue;
+        let randomRangeValue = Math.random() * range;
+        return Math.floor(lowValue + randomRangeValue);
+      }
+
+
+
+      function setRandomBackgroundColor() {
+        let body = document.getElementsByTagName('body')[0];
+        let r = getRandomNumberBetween(0, 255);
+        let g = getRandomNumberBetween(0, 255);
+        let b = getRandomNumberBetween(0, 255);
+
+        //background-color: rgb(145, 255, 40);
+        body.style.backgroundColor =
+          `rgb(${r}, ${g}, ${b})`;
+      }
+      let colorButton = document.getElementById('colorButton');
+      colorButton.onclick = setRandomBackgroundColor;
+
+    </script>
+  </body>
+</html>
