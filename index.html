@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <title>Home Page</title>
     <style>
       body {
-        background-color: black;
+        background-color: #efe9e6;
       }
       p {
         font-size: 19px;
@@ -18,14 +21,14 @@
         margin: 20px;
         font-size: 30px;
         color: #e3d6c7;
-        font-family: 'Times New Roman', serif;
+        font-family: 'Cinzel', serif;
         width: 100%;
         grid-area: header;
       }
 
       #myNavBar p a {
-        color: #e3d6c7;
-        font-family: 'Times New Roman', serif;
+        color: #79675d;
+        font-family: 'Cinzel', serif;
         font-size: 20px;
         text-decoration: none;
 
@@ -41,8 +44,8 @@
         transition-timing-fucntion: linear;
         transition-delay: 0s;
         transform-origin: center;
-        color: #e3d6c7;
-        font-family: 'Times New Roman', serif;
+        color: #79675d;
+        font-family: 'Cinzel', serif;
         font-size: 20px;
       }
       #transition1:hover {
@@ -52,9 +55,7 @@
         transition: color 10s;
         font-size: 28px;
       }
-      #name:hover {
-        color: #e3d6c7;
-      }
+
       #content {
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
@@ -74,28 +75,27 @@
         margin: 10px;
         padding: 10px;
         border-radius: 7px;
-        border: 1px solid;
         background-color:white;
       }
       @keyframes colors {
         0% {
-          color: #d3a977;
+          color: #c9ab89;
         }
         25% {
-          color: #e3d6c7;
+          color: #79675d;
         }
         50% {
-          color: #d3a977;
+          color: #c9ab89;
         }
         75% {
-          color: #e3d6c7;
+          color: #79675d;
         }
         100% {
-          color:#d3a977;
+          color:#c9ab89;
         }
       }
       #header {
-        animation: colors 6s infinite;
+        animation: colors 7s infinite;
       }
     @media screen and (max-width: 480px) {
       #content {
@@ -119,9 +119,6 @@
     </header>
   </div>
     <nav id="myNavBar">
-      <h2 id="name">
-        Tajea Sheffey
-      </h2>
     <p id="transition1">
       Work
     </p>
