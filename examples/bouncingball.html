@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Bouncing Ball Example</title>
+    <style>
+      #fence {
+        border: 5px dashed black;
+        width: 600px;
+        height: 500px;
+        position: relative;
+      }
+      #ball {
+        background: linear-gradient(to bottom, lightgray, Silver);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fence">
+      <div id="ball"></div>
+    </div>
+    <script>
+      let ball = document.getElementById('ball');
+
+      let ballX = 0;
+      let ballY = 0;
+      let ballXVelocity = 2;
+      let ballYVelocity = 2;
+
+      function moveBall() {
+        ball.style.left = ballX + 'px';
+        ball.style.top = ballY + 'px';
+
+        //ballX = ballX + ballXVelocity;
+        ballX += ballXVelocity;
+        ballY += ballYVelocity;
+
+        if (ballX > 600 ||ballX < 0) {
+
+        ballXVelocity *= -1;
+        }
+        if(ballY > 450 || ballY < 0){
+          ballYVelocity *= -1;
+        }
+      }
+
+      setInterval(moveBall, 10);
+    </script>
+  </body>
+</html>

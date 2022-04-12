@@ -7,16 +7,23 @@
     <title>Home Page</title>
     <style>
       body {
-        background-color: #efe9e6;
+        background-color: white;
       }
       p {
         font-size: 19px;
       }
       #header {
-        text-align: center;
-        display:inline-block;
-        border: 3px solid;
-        background-color:white;
+        text-align: right;
+        padding: 5px;
+        margin: 20px;
+        font-size: 30px;
+        color: #e3d6c7;
+        font-family: 'Cinzel', serif;
+        width: 100%;
+        grid-area: header;
+      }
+      #header2 {
+        text-align: right;
         padding: 5px;
         margin: 20px;
         font-size: 30px;
@@ -51,11 +58,6 @@
       #transition1:hover {
         transform: scale(3);
       }
-      #name {
-        transition: color 10s;
-        font-size: 28px;
-      }
-
       #content {
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
@@ -68,14 +70,6 @@
         grid-area: sidenav;
         text-align: center;
         margin-left: 30px;
-      }
-      #image {
-        grid-area: cover;
-        width: 100%;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 7px;
-        background-color:white;
       }
       @keyframes colors {
         0% {
@@ -111,11 +105,11 @@
   <body>
 <div id="content">
     <div class="centered">
-
     <header id="header">
-      Hi, I'm Tajea
-      <br />
-      Scroll down to see my work
+      Tajea LaShawn
+    </header>
+    <header id="header2">
+      Multimedia Designer
     </header>
   </div>
     <nav id="myNavBar">
@@ -128,11 +122,6 @@
     <p id="transition1"><a href="aboutpage.html">About Me</a></p>
     <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
   </nav>
-  <img id="image"
-  style="height: 750px"
-  src="images/HomePage.jpeg"
-  alt="marble"
-  />
 </div>
   </body>
 
