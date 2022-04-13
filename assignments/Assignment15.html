@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 15 - Javascript Slideshow</title>
+    <link type="text/css" rel="stylesheet" href="../css/Assignment15.css">
+  </head>
+  <body>
+    <div id="slideshow">
+      <img id="slide1" class="slideshowImage" src="../images/Photo1.jpeg" />
+      <img id="slide2" class="slideshowImage" src="../images/Photo2.jpeg" />
+      <img id="slide3" class="slideshowImage" src="../images/Photo3.jpeg" />
+      <img id="slide4" class="slideshowImage" src="../images/Photo4.jpeg" />
+      <img id="slide5" class="slideshowImage" src="../images/Photo5.jpeg" />
+
+    </div>
+    <div id="buttonContainer">
+    <input
+      type="button"
+      id="previous"
+      value="Previous"
+      onclick="showPreviousSlide()"
+    >
+    <input
+      type="button"
+      id="next"
+      value="Next"
+      onclick="showNextSlide()"
+      >
+      </div>
+    <script type="text/javascript" src="../js/Assignment15.js"></script>
+  </body>
+</html>

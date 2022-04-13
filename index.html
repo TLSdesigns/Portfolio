@@ -7,36 +7,30 @@
     <title>Home Page</title>
     <style>
       body {
-        background-color: white;
-      }
-      p {
-        font-size: 19px;
+        background-color: black;
+        background-image: url("../images/backgroundMarble.jpeg");
       }
       #header {
-        text-align: right;
-        padding: 5px;
-        margin: 20px;
-        font-size: 30px;
-        color: #e3d6c7;
         font-family: 'Cinzel', serif;
-        width: 100%;
+        font-size: 80px;
+        text-align: center;
+        padding-top: 500px;
+        color: #79675d;
         grid-area: header;
       }
-      #header2 {
-        text-align: right;
-        padding: 5px;
-        margin: 20px;
-        font-size: 30px;
-        color: #e3d6c7;
+      #career {
         font-family: 'Cinzel', serif;
-        width: 100%;
+        font-size: 25px;
+        color: #79675d;
+        text-align: center;
+        animation: colors 6s infinite;
         grid-area: header;
       }
 
       #myNavBar p a {
         color: #79675d;
         font-family: 'Cinzel', serif;
-        font-size: 20px;
+        font-size: 25px;
         text-decoration: none;
 
       }
@@ -69,7 +63,14 @@
       #myNavBar {
         grid-area: sidenav;
         text-align: center;
-        margin-left: 30px;
+        margin-left: 18px;
+        padding: 250px;
+      }
+      .colorLine1 {
+        background-color: pink;
+        border: 10px;
+        width: 6px;
+        height: 100px;
       }
       @keyframes colors {
         0% {
@@ -88,7 +89,7 @@
           color:#c9ab89;
         }
       }
-      #header {
+      #career {
         animation: colors 7s infinite;
       }
     @media screen and (max-width: 480px) {
@@ -103,14 +104,14 @@
     </style>
   </head>
   <body>
-<div id="content">
+  <div id="content">
     <div class="centered">
-    <header id="header">
-      Tajea LaShawn
-    </header>
-    <header id="header2">
-      Multimedia Designer
-    </header>
+      <header id="header">
+        Tajea LaShawn
+      </header>
+      <header id="career">
+        Multimedia Designer
+      </header>
   </div>
     <nav id="myNavBar">
     <p id="transition1">
@@ -123,6 +124,9 @@
     <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
   </nav>
 </div>
+  <div>
+    <div class="colorLine1"><div>
+  </div>
   </body>
 
 </html>
