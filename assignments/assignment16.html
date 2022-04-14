@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 16 - Modal/Popup</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #popupContainer {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        display: none;
+        justify-content: center;
+      }
+
+      #popupContainer.popupOpen {
+        display: flex;
+      }
+      #popupBackground {
+        background-color: rgba(100, 0, 0, 0.1);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+      }
+      #popup {
+        position: relative;
+        z-index: 1;
+        border: 2px solid black;
+        border-radius: 24px;
+        padding: 36px;
+        background-color: white;
+        min-width: 400px;
+        text-align: center;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 20px;
+        height: 200px;
+        bottom: -800px;
+        text-shadow: 1.px 2px 2px RosyBrown;
+      }
+      #popup .closePopup {
+        margin-top: 36px;
+      }
+      #header {
+        text-align: center;
+        font-family: Garamond, serif;
+        font-size: 55px;
+        text-shadow: 6px 2px 2px RosyBrown;
+      }
+      .popupTrigger {
+        text-align: center;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 25px;
+        cursor: pointer;
+      }
+      .closePopup {
+        background-color: RosyBrown;
+        color: black;
+        padding: 10px;
+        width: 80px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        opacity: 90%;
+      }
+      #image {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">CHANEL</h1>
+
+    <div class="popupTrigger">MAKEUP</div>
+    <div id="popupContainer" class="popupOpen">
+      <div id="popupBackground" class="closePopup"></div>
+      <div id="popup">
+        <div>ROUGE COCO BLOOM</div>
+        <div class="closePopup">CLOSE</div>
+      </div>
+    </div>
+    <div id="image">
+    <img
+      style="height: 650px"
+      src="https://www.chanel.com/images//t_one//w_0.38,h_0.38,c_crop/q_auto:good,f_auto,fl_lossy,dpr_1.2/w_1920/rouge-coco-bloom-hydrating-plumping-intense-shine-lip-colour-116-dream-0-11oz--packshot-default-172116-8835360030750.jpg"
+    />
+    </div>
+    <script type="text/javascript">
+      $('.popupTrigger').click(
+        function() {
+          $('#popupContainer').addClass('popupOpen');
+        }
+      );
+
+      $('.closePopup').click(
+      function() {
+        $('#popupContainer').removeClass('popupOpen');
+      }
+    );
+    </script>
+  </body>
+</html>

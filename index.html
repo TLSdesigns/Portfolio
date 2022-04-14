@@ -7,20 +7,22 @@
     <title>Home Page</title>
     <style>
       body {
-        background-color: black;
-        background-image: url("../images/backgroundMarble.jpeg");
+        background-color: white;
+        background-image: url('images/gold.jpeg');
+        background-repeat: no-repeat;
+        background-size:cover;
       }
       #header {
         font-family: 'Cinzel', serif;
-        font-size: 80px;
+        font-size: 150px;
         text-align: center;
-        padding-top: 500px;
-        color: #79675d;
+        color: black;
         grid-area: header;
+        margin: 15px;
       }
       #career {
         font-family: 'Cinzel', serif;
-        font-size: 25px;
+        font-size: 50px;
         color: #79675d;
         text-align: center;
         animation: colors 6s infinite;
@@ -28,16 +30,21 @@
       }
 
       #myNavBar p a {
-        color: #79675d;
+        color: black;
         font-family: 'Cinzel', serif;
-        font-size: 25px;
+        font-size: 35px;
         text-decoration: none;
 
       }
       .centered{
         text-align: center;
         grid-area: header;
-
+      }
+      #HeaderSection {
+        margin-top: 500px;
+        position: relative;
+        width: 1290px;
+        display: inline-block;
       }
       #transition1 {
         transition-property: transform;
@@ -45,9 +52,9 @@
         transition-timing-fucntion: linear;
         transition-delay: 0s;
         transform-origin: center;
-        color: #79675d;
+        color: black;
         font-family: 'Cinzel', serif;
-        font-size: 20px;
+        font-size: 35px;
       }
       #transition1:hover {
         transform: scale(3);
@@ -63,27 +70,54 @@
       #myNavBar {
         grid-area: sidenav;
         text-align: center;
-        margin-left: 18px;
         padding: 250px;
       }
+      .colorLine1,
+      .colorLine2 {
+        background-color: #9d7b60;
+        position: absolute;
+      }
       .colorLine1 {
-        background-color: pink;
-        border: 10px;
-        width: 6px;
-        height: 100px;
+        width: 4px;
+        height: 65px;
+        top: 0;
+        left: 0;
+      }
+      .colorLine2 {
+        width: 65px;
+        height: 4px;
+        top: 0;
+        left: 0;
+      }
+      .colorLine3,
+      .colorLine4 {
+        background-color: #9d7b60;
+        position: absolute;
+      }
+      .colorLine3 {
+        width: 4px;
+        height: 65px;
+        bottom: 0;
+        right: 0;
+      }
+      .colorLine4 {
+        width: 65px;
+        height: 4px;
+        bottom: 0;
+        right: 0;
       }
       @keyframes colors {
         0% {
           color: #c9ab89;
         }
         25% {
-          color: #79675d;
+          color: black;
         }
         50% {
           color: #c9ab89;
         }
         75% {
-          color: #79675d;
+          color: black;
         }
         100% {
           color:#c9ab89;
@@ -106,12 +140,18 @@
   <body>
   <div id="content">
     <div class="centered">
+      <div id="HeaderSection">
+      <div class="colorLine1"></div>
+      <div class="colorLine2"></div>
+      <div class="colorLine3"></div>
+      <div class="colorLine4"></div>
       <header id="header">
         Tajea LaShawn
       </header>
       <header id="career">
         Multimedia Designer
       </header>
+    </div>
   </div>
     <nav id="myNavBar">
     <p id="transition1">
@@ -124,9 +164,6 @@
     <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
   </nav>
 </div>
-  <div>
-    <div class="colorLine1"><div>
-  </div>
   </body>
 
 </html>
