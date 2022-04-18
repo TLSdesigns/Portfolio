@@ -2,62 +2,61 @@
 <html lang="en-US">
   <head>
     <title>Contact Information</title>
-    <style>
-      #header {
-        font-size: 35px;
-        color: RosyBrown;
-        text-align: center;
-      }
-      #nameinfo {
-        font-size: 30px;
-        color: RosyBrown;
-        margin: 50px;
-      }
-      .box1{
-        border: 2px solid black;
-        border-radius: 12px;
-        margin: 45px;
-        margin-bottom: 48px;
-        padding: 36px;
-        width:1500px;
-      }
-      .box2{
-        border: 2px solid black;
-        border-radius: 12px;
-        margin: 45px;
-        margin-bottom: 48px;
-        padding: 36px;
-        width:1500px;
-      }
-      .box3{
-        border: 2px solid black;
-        border-radius: 12px;
-        margin: 45px;
-        margin-bottom: 48px;
-        padding: 200px;
-        width:1500px;
-      }
-      #email {
-        font-size: 30px;
-        color: RosyBrown;
-        margin: 50px;
-      }
-    </style>
   </head>
+  <style>
+    header {
+      font-size: 50px;
+      text-align: center;
+      color: #9d7b60;
+    }
+    label {
+      color: #79675d;
+      font-size: 25px;
+      margin: 30px;
+    }
+    textarea {
+      width: 75%;
+      border: 1px solid black;
+      margin: 30px;
+    }
+    #buttonContainer  input[type=submit] {
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 48px;
+      background: linear-gradient(to bottom, #9d7b60, white);
+    }
+    #buttonContainer  input[type=submit]:active {
+      background: linear-gradient(to bottom, white, #9d7b60);
+    }
+    #buttonContainer {
+      text-align: center;
+    }
+  </style>
   <body>
-    <p id="header">Contact Information</p>
+    <header>Contact Information</header>
     <br>
-    <br>
-    <h2 id="nameinfo">Name</h2>
-    <div class="box1">
+    <div id="contactSection">
+    <div>
+      <label for="codeFeelingsId">Name</label>
+      <br>
+      <textarea id="codeFeelingsId" rows="2" cols="30"></textarea>
     </div>
     <br>
-    <h2 id="email">Email</h2>
-    <div class="box2">
+    <div>
+      <label for="codeFeelingsId">Email</label>
+      <br>
+      <textarea id="codeFeelingsId" rows="2" cols="30"></textarea>
     </div>
     <br>
-    <div class="box3">
+    <div>
+      <label for="codeFeelingsId">Message</label>
+      <br>
+      <textarea id="codeFeelingsId" rows="6" cols="30"></textarea>
     </div>
-    <p style="font-size: 19px;"><a href="index.html">Back</a></p>
+    <br>
+    <div id="buttonContainer">
+      <input type="submit" value="Sumbit">
+    </div>
+  </div>
   </body>
 </html>
