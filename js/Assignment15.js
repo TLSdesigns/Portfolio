@@ -16,7 +16,7 @@ function showSlide () {
   }
 
   if (currentSlideIndex < 0) {
-    currentSlideindex = slides.length - 1;
+    currentSlideIndex = slides.length - 1;
   }
 
   for (let i = 0; i < slides.length; i++) {
