@@ -8,7 +8,7 @@
     <style>
       body {
         background-color: white;
-        background-image: url('images/gold.jpeg');
+        background-image: url('images/goldbackground.jpeg');
         background-repeat: no-repeat;
         background-size:cover;
       }
@@ -41,9 +41,9 @@
         grid-area: header;
       }
       #HeaderSection {
-        margin-top: 500px;
+        margin-top: 150px;
         position: relative;
-        width: 1290px;
+        padding: 10px 25px;
         display: inline-block;
       }
       #transition1 {
@@ -57,74 +57,74 @@
         font-size: 35px;
       }
       #transition1:hover {
-        transform: scale(3);
+        transform: scale(1.5);
       }
       #content {
         display: grid;
         grid-template-columns: 1fr 5fr 1fr;
         grid-template-areas:
-          ". header ."
+          " header  header header "
           ". sidenav ."
           ". cover .";
       }
       #myNavBar {
         grid-area: sidenav;
         text-align: center;
-        padding: 250px;
+        padding: 190px;
       }
       .colorLine1,
       .colorLine2 {
-        background-color: #9d7b60;
+        background-color:#eee8e5;
         position: absolute;
       }
       .colorLine1 {
-        width: 4px;
+        width: 8px;
         height: 65px;
         top: 0;
         left: 0;
       }
       .colorLine2 {
         width: 65px;
-        height: 4px;
+        height: 8px;
         top: 0;
         left: 0;
       }
       .colorLine3,
       .colorLine4 {
-        background-color: #9d7b60;
+        background-color: #eee8e5;
         position: absolute;
       }
       .colorLine3 {
-        width: 4px;
+        width: 8px;
         height: 65px;
         bottom: 0;
         right: 0;
       }
       .colorLine4 {
         width: 65px;
-        height: 4px;
+        height: 8px;
         bottom: 0;
         right: 0;
       }
       @keyframes colors {
         0% {
-          color: #c9ab89;
+          color: black;
         }
         25% {
-          color: black;
+          color: #eee8e5;
         }
         50% {
-          color: #c9ab89;
-        }
-        75% {
           color: black;
         }
+        75% {
+          color: #eee8e5;
+        }
         100% {
-          color:#c9ab89;
+          color: black;
         }
       }
       #career {
-        animation: colors 7s infinite;
+        animation: colors 10s infinite;
       }
     @media screen and (max-width: 480px) {
       #content {
@@ -134,6 +134,16 @@
           "sidenav"
           "cover";
         }
+      #header {
+        font-size:50px;
+      }
+      #career {
+        font-size: 20px;
+      }
+      #myNavBar p a,
+      #transition1 {
+        font-size: 20px;
+      }
     }
     </style>
   </head>
@@ -157,7 +167,7 @@
     <p id="transition1">
       Work
     </p>
-    <p id="transition1"><a href="photography.html">Photography</a></p>
+    <p id="transition1"><a href="PhotographyPage.html">Photography</a></p>
     <p id="transition1"><a href="artwork.html">Artwork</a></p>
     <p id="transition1"><a href="projects.html">Projects</a></p>
     <p id="transition1"><a href="aboutpage.html">About Me</a></p>

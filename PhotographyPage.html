@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>Photography</title>
-    <link type="text/css" rel="stylesheet" href="../css/Assignment15.css">
+    <link type="text/css" rel="stylesheet" href="css/Assignment15.css">
     <style>
     body {
       background-color: white;
@@ -92,54 +92,29 @@
       <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
     <nav>
       <br>
-<div id="slideshow" style="text-align:center">
-  <img id="image1" class="slideshowImage"
-    style="
-    height: 400px"
-    src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/7d88cebe-bcba-4fda-9634-4c317f0834e3_rw_1920.jpg?h=6ef22e844ce7f6f3850fcf00e1a4a85a"
-  />
-  <img id="image2" class="slideshowImage"
-    style="
-    height: 400px"
-    src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/a2bfdd70-a467-49f0-8b03-2897b53dfef4_rw_1920.jpg?h=5e51f4abd0b09096a81c508cc9be475d"
-  />
-    <br />
-  <img id="image3" class="slideshowImage"
-    style="
-    height: 400px"
-    src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/6f222abb-d14a-4479-8600-74c69c4d99c1_rw_1920.jpg?h=92d8bf6377702bd5fda0950ad3ab0b88"
-  />
-  <img id="image4" class="slideshowImage"
-    style="
-    height: 400px"
-    src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/ca7d8b26-6350-4139-9c6a-44b6dd737bb8_rw_3840.jpg?h=fdcf6f81d360d77ae4bf5bc05cfe3038"
-  />
-    <br />
-  <img id="image5" class="slideshowImage"
-    style="
-    height: 400px"
-    src="https://pro2-bar-s3-cdn-cf5.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/6b87017a-206d-453d-bdae-c8731d0af3a9_rw_1920.jpg?h=43824a454ff67f605926ed6d1dbc644b"
-  />
-  <img  id="image6" class="slideshowImage"
-    style="
-    height: 400px"
-    src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/dafcb8f9-3c6b-4ac1-816c-22b4ba28bd7e_rw_3840.jpg?h=19b685c7601d9bd1af3f00aed6ec32ca"
-  />
-</div>
-<div id="buttonContainer">
-<input
-  type="button"
-  id="previous"
-  value="Previous"
-  onclick="showPreviousSlide()"
->
-<input
-  type="button"
-  id="next"
-  value="Next"
-  onclick="showNextSlide()"
-  >
+  <div style="text-align:center">
+    <div id="slideshow">
+      <img id="slide1" class="slideshowImage" src="images/Photo1.jpeg" />
+      <img id="slide2" class="slideshowImage" src="images/Photo2.jpeg" />
+      <img id="slide3" class="slideshowImage" src="images/Photo3.jpeg" />
+      <img id="slide4" class="slideshowImage" src="images/Photo4.jpeg" />
+      <img id="slide5" class="slideshowImage" src="images/Photo5.jpeg" />
+    </div>
+    <div id="buttonContainer">
+    <input
+      type="button"
+      id="previous"
+      value="Previous"
+      onclick="showPreviousSlide()"
+    >
+    <input
+      type="button"
+      id="next"
+      value="Next"
+      onclick="showNextSlide()"
+      >
+      </div>
+    <script type="text/javascript" src="js/Assignment15.js"></script>
   </div>
-<script type="text/javascript" src="../js/photography15.js"></script>
-</body>
+  </body>
 </html>
