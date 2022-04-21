@@ -66,6 +66,15 @@
       text-align: center;
       margin-left: 30px;
     }
+    #buttonContainer {
+      display: inline-block;
+    }
+    #slideshow {
+      display: flex;
+      justify-content: center;
+
+    }
+
   @media screen and (max-width: 480px) {
     #content {
       grid-template-columns: 1fr;
@@ -73,6 +82,15 @@
         "header"
         "sidenav"
         "cover";
+      }
+      .slideshowImage {
+        width: 100%;
+      }
+      #slideshow {
+        height: auto;
+      }
+      #buttonContainer {
+        width: auto;
       }
   }
     </style>
@@ -87,11 +105,8 @@
         Photography
       </p>
       <p id="transition1"><a href="artwork.html">Artwork</a></p>
-      <p id="transition1"><a href="projects.html">Projects</a></p>
-      <p id="transition1"><a href="aboutpage.html">About Me</a></p>
       <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
     <nav>
-      <br>
   <div style="text-align:center">
     <div id="slideshow">
       <img id="slide1" class="slideshowImage" src="images/Photo1.jpeg" />

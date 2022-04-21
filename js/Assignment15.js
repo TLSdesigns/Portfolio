@@ -1,7 +1,6 @@
 let currentSlideIndex = 0
 
 function showSlide () {
-  debugger;
   let slide1 = document.getElementById('slide1');
   let slide2 = document.getElementById('slide2');
   let slide3 = document.getElementById('slide3');

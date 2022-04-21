@@ -8,7 +8,7 @@
     <title>Artwork</title>
     <style>
     body {
-      background-color: black;
+      background-color: white;
     }
     p {
       font-size: 19px;
@@ -18,17 +18,17 @@
       display:inline-block;
       padding: 5px;
       margin: 20px;
-      font-size: 55px;
-      color: #e3d6c7;
+      font-size: 60px;
+      color: #c9ab89;
       font-family: 'Times New Roman', serif;
       width: 100%;
       grid-area: header;
     }
 
     #myNavBar p a {
-      color: #e3d6c7;
+      color: black;
       font-family: 'Times New Roman', serif;
-      font-size: 20px;
+      font-size: 30px;
 
     }
     .centered{
@@ -42,19 +42,12 @@
       transition-timing-fucntion: linear;
       transition-delay: 0s;
       transform-origin: center;
-      color: #e3d6c7;
+      color: black;
       font-family: 'Times New Roman', serif;
-      font-size: 20px;
+      font-size: 30px;
     }
     #transition1:hover {
-      transform: scale(3);
-    }
-    #name {
-      transition: color 1s;
-      font-size: 27px;
-    }
-    #name:hover {
-      color: #e3d6c7;
+      transform: scale(1.5);
     }
     #content {
       display: grid;
@@ -75,27 +68,10 @@
       border-radius: 5px;
       width: 50px;
     }
-
-    @keyframes colors {
-      0% {
-        color: #d3a977;
-      }
-      25% {
-        color: #e3d6c7;
-      }
-      50% {
-        color: #d3a977;
-      }
-      75% {
-        color: #e3d6c7;
-      }
-      100% {
-        color:#d3a977;
-      }
-    }
-    #header {
-      animation: colors 6s infinite;
-    }
+    /* .carousel-item.active {
+      display: flex;
+      justify-content: center;
+    } */
   @media screen and (max-width: 480px) {
     #content {
       grid-template-columns: 1fr;
@@ -103,6 +79,9 @@
         "header"
         "sidenav"
         "cover";
+      }
+      img {
+        width: 100%;
       }
   }
     </style>
@@ -117,29 +96,34 @@
     <p id="transition1">
       Artwork
     </p>
-    <p id="transition1"><a href="projects.html">Projects</a></p>
-    <p id="transition1"><a href="aboutpage.html">About Me</a></p>
     <p id="transition1"><a href="contactinformation.html">Contact Information</a></p>
     </nav>
 <div style="text-align:center">
-  <br>
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade" >
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/3105dcef-f970-42d0-a51c-eee58a8b2639_rw_1200.jpg?h=e1cbb4e6a54a546c19150e1d6e365f6c"
-        class="d-block" alt="...">
+      <img
+        src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/3105dcef-f970-42d0-a51c-eee58a8b2639_rw_1200.jpg?h=e1cbb4e6a54a546c19150e1d6e365f6c"
+        class="d-block"
+        alt="image1">
     </div>
     <div class="carousel-item">
-      <img src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/9c222f91-ca2e-450c-aab3-4c2e862e2823_rw_1200.jpg?h=0cb240acf073f9611be8e591e54a00f7"
-        class="d-block" alt="...">
+      <img
+        src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/9c222f91-ca2e-450c-aab3-4c2e862e2823_rw_1200.jpg?h=0cb240acf073f9611be8e591e54a00f7"
+        class="d-block"
+        alt="image2">
     </div>
     <div class="carousel-item">
-      <img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/0314f26c-1bc6-45cb-8ca3-0fe5b95c60f0_rw_1200.jpg?h=6bb7459271d7aa6ec740c7faf7a3e7aa"
-        class="d-block" alt="...">
+      <img
+        src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/0314f26c-1bc6-45cb-8ca3-0fe5b95c60f0_rw_1200.jpg?h=6bb7459271d7aa6ec740c7faf7a3e7aa"
+        class="d-block"
+        alt="image3">
     </div>
     <div class="carousel-item">
-      <img src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/dfa3a51f-30e8-4ea9-8aeb-a2a527d05ecb_rw_1200.jpg?h=7a22eec77d01ac42c9d176464f85bd02"
-        class="d-block" alt="...">
+      <img
+        src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/7c246f69-c87f-4ab3-a87a-90a1102fbafc/dfa3a51f-30e8-4ea9-8aeb-a2a527d05ecb_rw_1200.jpg?h=7a22eec77d01ac42c9d176464f85bd02"
+        class="d-block"
+        alt="images4">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
