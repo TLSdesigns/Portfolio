@@ -2,7 +2,7 @@
   position: relative;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .body-day{
@@ -23,15 +23,15 @@
 /*********************************************************/
 
 .body-night{
-  background-color: #400000;
+  background-color: #261a0d;
 }
 
 .box-night{
-background-color:#484848;
+background-color: #404040;
 }
 
 .heading-night, .content-night{
-  background-color: #400000;
+  background-color: #261a0d;
   color: white;
 }
 
