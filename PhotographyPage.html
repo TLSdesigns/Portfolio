@@ -3,28 +3,30 @@
   <head>
     <title>Photography</title>
     <link type="text/css" rel="stylesheet" href="css/Assignment15.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <style>
     body {
       background-color: white;
+      font-family: 'Cinzel', serif;
     }
-    p {
-      font-size: 19px;
-    }
+
     #header {
       text-align: center;
       display:inline-block;
       padding: 5px;
       margin: 20px;
-      font-size: 55px;
-      color: black;
-      font-family: 'Times New Roman', serif;
+      font-size: 60px;
+      color: #eee8e5;
+      text-shadow: 4px 2px 2px #79675d;
       width: 100%;
       grid-area: header;
     }
 
     #myNavBar p a {
-      color: #c9ab89;
-      font-family: 'Times New Roman', serif;
+      color: black;
+      text-decoration: none;
       font-size: 20px;
 
     }
@@ -39,19 +41,11 @@
       transition-timing-fucntion: linear;
       transition-delay: 0s;
       transform-origin: center;
-      color: #c9ab89;
-      font-family: 'Times New Roman', serif;
+      color: black;
       font-size: 20px;
     }
     #transition1:hover {
-      transform: scale(3);
-    }
-    #name {
-      transition: color 1s;
-      font-size: 27px;
-    }
-    #name:hover {
-      color: #e3d6c7;
+      transform: scale(1.5);
     }
     #content {
       display: grid;
@@ -73,6 +67,12 @@
       display: flex;
       justify-content: center;
 
+    }
+    #myNavBar a:hover {
+      background-color: #79675d;
+      display: inline-block;
+      padding: 1px;
+      color: #eee8e5;
     }
 
   @media screen and (max-width: 480px) {
